@@ -2,51 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Redes y Seguridad Informática">
-  <title>Henry | Redes y Seguridad Informática</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diario de ruta – Blog de viajes</title>
+  <meta name="description" content="Relatos, rutas y consejos de mis viajes por el Perú y más allá.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hola, soy Henry 👋</h1>
-    <p>Estudiante de Redes y Seguridad Informática en SENATI</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="marca" href="#inicio">Diario de ruta</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#viajes">Viajes</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <main>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Me apasionan las redes, la seguridad informática y aprender cosas nuevas cada día.</p>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="tarjetas">
-        <article>
-          <h3>Firewall con pfSense</h3>
-          <p>Proyecto de seguridad perimetral con detección de intrusos (Suricata).</p>
-        </article>
-        <article>
-          <h3>Mi primera web</h3>
-          <p>Página publicada con GitHub Pages.</p>
-        </article>
+  <main id="inicio">
+    <section class="hero">
+      <div class="contenedor">
+        <h1>Caminos, volcanes y mercados.</h1>
+        <p>Cuaderno de viaje desde Arequipa: rutas que he recorrido, lo que costó llegar y lo que vale la pena ver.</p>
+        <a class="boton" href="#viajes">Ver los viajes</a>
       </div>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p><a href="https://github.com/henrycode-lab">GitHub</a></p>
+    <section class="seccion" id="viajes">
+      <div class="contenedor">
+        <h2>Últimos viajes</h2>
+        <div class="entradas">
+
+          <article class="entrada destacada">
+            <div class="foto arequipa" role="img" aria-label="Paisaje de Arequipa"></div>
+            <div class="texto">
+              <p class="meta">Arequipa · 12 de noviembre de 2026 · 6 min de lectura</p>
+              <h3><a href="#">Un día completo entre sillar y volcanes</a></h3>
+              <p>Del centro histórico al mirador de Yanahuara, con parada obligada para probar un rocoto relleno. Itinerario, costos y horarios.</p>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="foto colca" role="img" aria-label="Cañón del Colca"></div>
+            <div class="texto">
+              <p class="meta">Colca · 4 min</p>
+              <h3><a href="#">Cañón del Colca sin tour: cómo llegar por tu cuenta</a></h3>
+              <p>Buses, tiempos y qué llevar para la altura.</p>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="foto cusco" role="img" aria-label="Calles de Cusco"></div>
+            <div class="texto">
+              <p class="meta">Cusco · 5 min</p>
+              <h3><a href="#">Cusco en tres días con poco presupuesto</a></h3>
+              <p>Dónde comer, dormir y qué boletos conviene comprar.</p>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="foto" role="img" aria-label="Ruta por carretera"></div>
+            <div class="texto">
+              <p class="meta">Próximamente</p>
+              <h3><a href="#">Tu próximo destino aquí</a></h3>
+              <p>Edita este bloque con tu siguiente relato.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion sobre" id="sobre-mi">
+      <div class="contenedor">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de Redes y Seguridad Informática y viajo cada vez que el calendario lo permite. Aquí cuento los lugares que conozco, con datos reales para que planear tu propio viaje sea más fácil.</p>
+        <p>Si quieres recomendarme un destino, escríbeme.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="contacto">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <p>Escríbeme a <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Henry. Hecho con HTML y CSS.</p>
+  <footer class="pie">
+    <div class="contenedor">© 2026 Diario de ruta</div>
   </footer>
+
 </body>
 </html>
